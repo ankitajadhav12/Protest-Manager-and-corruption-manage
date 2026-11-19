@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Live Civic Activity Map — PCM{% endblock %}
+{% block content %}
+<div class="pcm-map-layout">
+  <div class="pcm-map-toolbar">
+    <span id="socket-status" class="pcm-status">Connecting to Socket.IO...</span>
+    <button type="button" id="reset-pune" class="pcm-btn-secondary">Reset Pune View</button>
+    <button type="button" id="reset-india" class="pcm-btn-secondary">India View</button>
+  </div>
+  <div id="pcm-leaflet-map" style="height: calc(100vh - 130px); width: 100%;"></div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/map.js') }}"></script>
+{% endblock %}

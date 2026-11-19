@@ -1,0 +1,6 @@
+{
+  "name": "Protest & Corruption Manager (PCM)",
+  "description": "Integrated civic engagement and public accountability platform for corruption reporting, civic complaints, peaceful protest management, real-time mapping, and transparency analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

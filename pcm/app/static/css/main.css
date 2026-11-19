@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  background: #070d1a;
+  color: #f1f5f9;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+.pcm-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 24px;
+  background: #0d1629;
+  border-bottom: 1px solid #1e2d4a;
+}
+.pcm-brand {
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
+.pcm-nav {
+  display: flex;
+  gap: 20px;
+}
+.pcm-nav a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 14px;
+}
+.pcm-hero, .pcm-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+.pcm-tagline {
+  color: #22d3ee;
+  font-weight: 600;
+}
+.pcm-subtitle {
+  color: #94a3b8;
+  max-width: 680px;
+}
+.pcm-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+.pcm-btn-primary {
+  background: #06b6d4;
+  color: #020617;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.pcm-btn-secondary {
+  background: #131f38;
+  color: #e2e8f0;
+  border: 1px solid #1e2d4a;
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.pcm-map-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 20px;
+  background: #0d1629;
+  border-bottom: 1px solid #1e2d4a;
+}
+.pcm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.pcm-card {
+  background: #0d1629;
+  border: 1px solid #1e2d4a;
+  border-radius: 10px;
+  padding: 16px;
+}

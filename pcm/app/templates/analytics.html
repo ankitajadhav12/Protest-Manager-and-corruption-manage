@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Analytics — PCM{% endblock %}
+{% block content %}
+<section class="pcm-container">
+  <h1>Transparency &amp; Accountability Analytics</h1>
+  <div id="analytics-kpis" class="pcm-grid"></div>
+  <canvas id="trends-chart" height="120"></canvas>
+</section>
+{% endblock %}
+{% block scripts %}
+<script>
+  fetch('/api/analytics').then(r => r.json()).then(data => {
+    const el = document.getElementById('analytics-kpis');
+    el.innerHTML = `
+      <div class="pcm-card">Corruption Reports: ${data.kpis.total_corruption_reports}</div>
+      <div class="pcm-card">Civic Complaints: ${data.kpis.total_complaints}</div>
+      <div class="pcm-card">Resolved Complaints: ${data.kpis.resolved_complaints}</div>
+      <div class="pcm-card">Upcoming Events: ${data.kpis.upcoming_events}</div>
+    `;
+  });
+</script>
+{% endblock %}
